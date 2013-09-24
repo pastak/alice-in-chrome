@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+  <script src='./jquery.js'></script>
+  <script  src='./popup.js'></script>
+  <style>
+    #no, #imageId {
+      width: 4em;
+    }
+  </style>
+</head>
+<body>
+<form id='selectEpisode'>
+  話数 <select id='episode'>
+    <option value=''>---</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <!--
+    `なお作者は第6話のたこ焼きのシーンを作成して満足したため第7話以降のgif画像は存在しない。`
+    via http://mogashi.hateblo.jp/entry/2013/09/24/000619
+    -->
+    <!--
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    <option value='11'>11</option>
+    <option value='12'>12</option>
+    -->
+  </select>
+  No <input type='number' id='no' />
+  <span> OR </span>
+  ID <input  type='number' id='imageId' />
+  <input type='submit' value='更新' />
+  <input type='button' value='ランダム' id='randomBtn' />
+</form>
+  <img id="AliceImage" src='http://mogashi.no-ip.org/alice/' />
+</body>
+</html>
+
